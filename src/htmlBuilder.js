@@ -62,7 +62,7 @@ const generateDarkModeToggle = () => `
 `;
 
 const generateGithubLink = () => `
-<a href="https://github.com/yixiu001/sublink-worker" target="_blank" rel="noopener noreferrer" class="github-link">
+<a href="https://github.com/MaJiD-PaGeS/sublink-worker" target="_blank" rel="noopener noreferrer" class="github-link">
 <i class="fab fa-github"></i>
 </a>
 `;
