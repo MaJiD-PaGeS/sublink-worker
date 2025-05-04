@@ -25,8 +25,8 @@ jobs:
       
       - name: Check and Create KV Namespace
         env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ qa7nmmeVVUMHU7s_qIK3OwjbGNWWb9CgRkelxyX_ }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ 404ac43a55b24849cf43209240a75a8f }}
         run: |
           KV_NAMESPACE="SUBLINK_KV"
           echo "Checking for KV namespace: $KV_NAMESPACE"
