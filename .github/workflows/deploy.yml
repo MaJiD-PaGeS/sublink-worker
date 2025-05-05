@@ -26,7 +26,7 @@ jobs:
       - name: Check and Create KV Namespace
         env:
           CLOUDFLARE_API_TOKEN: ${{ zcPhYxlv9uAwG3l3u3PntSCBw16MOUlfYTqTr5yL }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ 404ac43a55b24849cf43209240a75a8f }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ 2d3f4d98d9a64274b9352c85ffd71420 }}
         run: |
           KV_NAMESPACE="SUBLINK_KV"
           echo "Checking for KV namespace: $KV_NAMESPACE"
@@ -43,7 +43,7 @@ jobs:
             exit 1
           fi
           
-          KV_ID=$(echo "$LIST_OUTPUT" | jq -r '.[] | select(.title == "sublink-worker-'$KV_NAMESPACE'") | 404ac43a55b24849cf43209240a75a8f')
+          KV_ID=$(echo "$LIST_OUTPUT" | jq -r '.[] | select(.title == "sublink-worker-'$KV_NAMESPACE'") | 2d3f4d98d9a64274b9352c85ffd71420')
           
           if [ -z "$KV_ID" ]; then
               echo "KV namespace $KV_NAMESPACE does not exist. Creating..."
